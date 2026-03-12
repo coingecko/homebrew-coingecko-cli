@@ -5,21 +5,21 @@
 class Cg < Formula
   desc "CoinGecko CLI — cryptocurrency data at your fingertips"
   homepage "https://github.com/coingecko/coingecko-cli"
-  version "1.0.8"
+  version "1.0.9"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/coingecko/coingecko-cli/releases/download/v1.0.8/cg_1.0.8_darwin_amd64.tar.gz"
-      sha256 "dfd5314010b73247134bd6203b46d3caf6dc3e60d823f0aeab9f9aaac17337a6"
+      url "https://github.com/coingecko/coingecko-cli/releases/download/v1.0.9/cg_1.0.9_darwin_amd64.tar.gz"
+      sha256 "67d6ce153791f775b9aafb96ecc7617d4acd4fcbc28cef4efb07e6d073f202af"
 
       define_method(:install) do
         bin.install "cg"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/coingecko/coingecko-cli/releases/download/v1.0.8/cg_1.0.8_darwin_arm64.tar.gz"
-      sha256 "d1289abbd6c470476967ac8dea1beaa3fac0332dbf89c7e24266bd1db28eaad8"
+      url "https://github.com/coingecko/coingecko-cli/releases/download/v1.0.9/cg_1.0.9_darwin_arm64.tar.gz"
+      sha256 "8c3a1757b8f673efd13d0911b663fc7a298465b9d71e3c0a48c5209611001526"
 
       define_method(:install) do
         bin.install "cg"
@@ -29,15 +29,15 @@ class Cg < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/coingecko/coingecko-cli/releases/download/v1.0.8/cg_1.0.8_linux_amd64.tar.gz"
-      sha256 "0192b18ada752f873740cfc8fd99b5848b8ad9bcdcc46be9187257154a62e7f4"
+      url "https://github.com/coingecko/coingecko-cli/releases/download/v1.0.9/cg_1.0.9_linux_amd64.tar.gz"
+      sha256 "4efb58d9dce3cbf724af95445d8b9362ff18a907cd63c1208a051550b6e78007"
       define_method(:install) do
         bin.install "cg"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/coingecko/coingecko-cli/releases/download/v1.0.8/cg_1.0.8_linux_arm64.tar.gz"
-      sha256 "6a80369b368639215334b4a10bbc3c97b7e47f6daee2abfa77e56f61a09907be"
+      url "https://github.com/coingecko/coingecko-cli/releases/download/v1.0.9/cg_1.0.9_linux_arm64.tar.gz"
+      sha256 "bd66b76de02d68ee5ed8c24f3e7fda01e12971de3263653b3cc3e42912b1fc97"
       define_method(:install) do
         bin.install "cg"
       end
